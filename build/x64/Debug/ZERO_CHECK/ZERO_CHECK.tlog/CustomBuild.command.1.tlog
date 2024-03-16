@@ -1,0 +1,10 @@
+^D:\PROGECTS\PROGECT3\BUILD\CMAKEFILES\398644767D32886A3A5AB9AB9250E3AC\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/progects/progect3 -BD:/progects/progect3/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/progects/progect3/build/progec3.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
